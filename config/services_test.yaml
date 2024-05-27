@@ -1,0 +1,5 @@
+services:
+  App\Repository\LogEntryRepository:
+    factory: ['App\Tests\Repository\MockLogEntryRepositoryFactory', 'create']
+    tags:
+      - { name: 'doctrine.repository_service' }
