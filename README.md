@@ -31,3 +31,10 @@ php bin/console app:process-log logs.log
 
 
 Access the `/count` endpoint with appropriate query parameters:
+
+```bash
+serviceNames: Comma-separated list of service names to filter by (e.g., USER-SERVICE,INVOICE-SERVICE).
+statusCode: Status code to filter by (e.g., 201).
+startDate: Start date for the log entries (e.g., 2018-08-17T09:21:53).
+endDate: End date for the log entries (e.g., 2018-08-18T10:33:59).
+```
